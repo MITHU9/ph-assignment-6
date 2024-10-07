@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Peddy || Home</title>
+    <link rel="stylesheet" href="./output/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <nav
+        class="md:w-11/12 md:mx-auto px-2 md:px-10 md:py-3 py-2 flex items-center justify-between"
+      >
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div class="md:flex items-center gap-2 hidden">
+                <img class="w-full" src="./images/logo.webp" alt="logo" />
+                <h2 class="text-xl md:text-2xl font-bold">Peddy</h2>
+              </div>
+              <div
+                tabindex="0"
+                role="button"
+                class="btn btn-ghost btn-circle md:hidden"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h7"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow md:hidden"
+              >
+                <li><a>Home</a></li>
+                <li><a>Shop</a></li>
+                <li><a>Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="navbar-center">
+            <div class="flex items-center gap-2 md:hidden">
+              <img class="w-8" src="./images/logo.webp" alt="logo" />
+              <h2 class="text-xl md:text-2xl font-bold">Peddy</h2>
+            </div>
+            <ul
+              class="md:flex items-center gap-2 md:gap-6 font-semibold text-gray-600 hidden"
+            >
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <span class="btn btn-ghost btn-circle">
+              <i
+                class="fa-regular fa-user border border-primary/30 p-2 md:p-3 rounded-full hover:bg-primary hover:text-white hover:border-none"
+              ></i>
+            </span>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- === Loading Spinner === -->
+      <div id="loading" class="hidden items-center justify-center h-[350px]">
+        <span class="loading loading-bars loading-lg"></span>
+      </div>
+      <!-- === Loading  End=== -->
+      <!-- ==== hero section start ==== -->
+      <section class="md:w-11/12 mx-auto px-1 md:px-10 md:py-3 py-2">
+        <div class="flex items-center gap-5 flex-col justify-center">
+          <div class="text-center md:w-10/12 lg:w-6/12">
+            <h3 class="text-lg font-semibold text-gray-500">
+              Bringing Families Together ❤️
+            </h3>
+            <h1 class="text-3xl md:text-5xl font-bold md:py-3 py-2">
+              Your Path to Adoption <br />
+              Starts Here
+            </h1>
+            <p class="text-gray-500 font-semibold py-2 md:py-3">
+              Pets are beloved companions that bring joy, comfort, and happiness
+              to people's lives. Whether it's a loyal dog, a playful cat, or a
+              colorful bird, pets enrich our daily routines with their unique
+              personalities and unconditional love.
+            </p>
+            <button
+              class="bg-primary text-white px-4 py-2 rounded-xl font-semibold hover:bg-slate-500 hover:text-white"
+            >
+              View More
+            </button>
+          </div>
+          <div>
+            <img class="w-full" src="./images/pet.webp" alt="pet" />
+          </div>
+        </div>
+      </section>
+      <!-- ==== hero section end ==== -->
+
+      <!-- ==== Adopt section start ==== -->
+
+      <section class="md:w-11/12 mx-auto px-1 md:px-10 md:py-3 py-2 mt-5">
+        <!-- ==== text part ==== -->
+        <div class="text-center md:w-10/12 lg:w-6/12 mx-auto">
+          <h3 class="text-2xl font-semibold text-gray-700">
+            Adopt Your Best Friend
+          </h3>
+          <p class="text-gray-500 font-semibold py-2">
+            Adopted pets can bring endless love, loyalty, and joy into your
+            home, while you give them the happy life they deserve. Whether you
+            adopt from a shelter or rescue organization, you're not just saving
+            a life; you're gaining a devoted friend.
+          </p>
+        </div>
+        <!-- ==== text part end ==== -->
+        <!-- === pet category start ==== -->
+        <div
+          id="pet-category"
+          class="flex w-full items-center gap-3 justify-between mt-5 md:w-11/12 lg:w-2/3 mx-auto px-1"
+        >
+          <!-- ===== pets category here ===== -->
+        </div>
+        <!-- === pet category end ==== -->
+
+        <!-- ==== pet cards ==== -->
+        <div
+          class="flex justify-between items-center gap-4 mt-8 md:w-11/12 mx-auto"
+        >
+          <h2 class="text-xl px-2 md:text-2xl font-semibold text-gray-700">
+            Best Deal For You
+          </h2>
+          <button
+            id="sort-btn"
+            class="bg-primary text-white px-4 py-2 rounded-xl font-semibold hover:bg-slate-500 hover:text-white"
+          >
+            Sort by Price
+          </button>
+        </div>
+
+        <!-- ==== pets Modal ===== -->
+
+        <dialog id="details" class="modal modal-bottom sm:modal-middle">
+          <!-- === pet details here === -->
+        </dialog>
+
+        <!-- ==== adopt section start ==== -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4 w-11/12 mx-auto mt-5"
+        >
+          <!-- ====left card ====-->
+          <div
+            id="pet-cards"
+            class="col-span-2 grid md:grid-cols-2 grid-cols-1 lg:grid-cols-3 gap-3"
+          >
+            <!-- ==== pets card here ==== -->
+          </div>
+          <!-- ====right card ==== -->
+          <div
+            id="pet-images"
+            class="grid md:grid-cols-2 grid-cols-1 gap-3 border rounded-lg p-3 place-self-start w-full md:min-w-52"
+          >
+            <!-- === pet image here === -->
+          </div>
+        </div>
+      </section>
+
+      <!-- ==== Adopt section end ==== -->
+
+      <!-- ====Adopt Modal Start==== -->
+
+      <dialog id="adopt-modal" class="modal modal-bottom sm:modal-middle">
+        <div class="modal-box">
+          <div class="flex items-center justify-center flex-col gap-3">
+            <img
+              class="text-green-400"
+              src="./icons/shake-hand.png"
+              alt="hand-shake"
+            />
+            <h1 class="text-4xl font-bold">Congrates</h1>
+            <p class="font-semibold">Adoption Process is start for your Pet</p>
+            <h1 id="count" class="text-5xl font-bold"></h1>
+          </div>
+        </div>
+      </dialog>
+      <!-- === Adopt Modal End === -->
+    </main>
+
+    <!-- ==== footer section start ==== -->
+
+    <footer class="bg-[#131313] mt-8 p-6 md:p-14">
+      <div class="w-11/12 mx-auto">
+        <div class="flex justify-between flex-wrap gap-5">
+          <div class="flex flex-col gap-2 text-gray-500 font-semibold">
+            <div class="flex items-center gap-2">
+              <img class="w-8" src="./images/logo.webp" alt="logo" />
+              <h2 class="text-xl md:text-3xl font-bold text-gray-300">Peddy</h2>
+            </div>
+            <p>Location: av. Washington 165, NY CA 54003</p>
+            <p>Phone: +31 85 964 47 25</p>
+            <p>Email: kmmithu2015@gmail.com</p>
+            <p>Openings hours: 9.00 AM - 5.00 PM</p>
+            <div class="flex items-center gap-3 mt-2">
+              <a href="#"
+                ><img class="w-12" src="./icons/Facebook.png" alt="facebook"
+              /></a>
+              <a href="#"
+                ><img class="w-12" src="./icons/Twitter.png" alt="twitter"
+              /></a>
+              <a href="#"
+                ><img class="w-12" src="./icons/Instagram.png" alt="instagram"
+              /></a>
+              <a href="#"
+                ><img class="w-12" src="./icons/Linkedin.png" alt="linkedin"
+              /></a>
+            </div>
+          </div>
+          <div>
+            <h2 class="text-xl font-bold text-gray-400">Useful Links</h2>
+            <ul class="flex flex-col mt-5 gap-2 text-gray-500 font-semibold">
+              <li
+                class="hover:translate-x-1 hover:translate-y-1 transition-all"
+              >
+                Home
+              </li>
+              <li
+                class="hover:translate-x-1 hover:translate-y-1 transition-all"
+              >
+                About Us
+              </li>
+              <li
+                class="hover:translate-x-1 hover:translate-y-1 transition-all"
+              >
+                Animals
+              </li>
+              <li
+                class="hover:translate-x-1 hover:translate-y-1 transition-all"
+              >
+                Foundation
+              </li>
+              <li
+                class="hover:translate-x-1 hover:translate-y-1 transition-all"
+              >
+                Contact
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="text-xl font-bold text-gray-300">Drop a Message</h2>
+            <input
+              type="text"
+              placeholder="Enter Your Email..."
+              class="w-full bg-gray-500 outline-none text-white rounded-lg px-2 py-2 mt-5"
+            />
+            <button
+              class="bg-primary w-full text-white px-4 py-2 rounded-xl font-semibold hover:bg-slate-500 hover:text-white mt-4"
+            >
+              Subscribe
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ==== footer section end ==== -->
+
+    <script src="./script.js"></script>
+  </body>
+</html>
