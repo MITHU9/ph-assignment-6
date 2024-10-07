@@ -15,4 +15,5 @@
   <li>Arrow function used</li>
   <li>Promise used</li>  
 </ul>
-<a href="https://peddy-home-by-mithu.netlify.app/">https://peddy-home-by-mithu.netlify.app/</a>
+<h2>Live link:<a href="https://peddy-home-by-mithu9.netlify.app/">https://peddy-home-by-mithu9.netlify.app/</a><h2/>
+<a href="https://peddy-home-by-mithu9.netlify.app/">https://peddy-home-by-mithu9.netlify.app/</a>
